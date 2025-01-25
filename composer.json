@@ -4,7 +4,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Config\\": "src/Config"
+            "Config\\": "src/Config",
+            "Classes\\": "src/Classes",
+            "Models\\": "src/Models",
+            "Controllers\\": "src/Controllers"
         }
-    }
+    },
+  "require": {
+    "ext-pdo": "*"
+  }
 }

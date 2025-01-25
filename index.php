@@ -1,5 +1,14 @@
 <?php
 
 require_once 'vendor/autoload.php';
-use Config\Database;
 
+use Controllers\simpleController;
+
+function main() {
+
+    $simpleController = new simpleController();
+    $simpleController->index();
+
+}
+
+main();

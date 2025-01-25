@@ -3,7 +3,7 @@
         'name' => '__root__',
         'pretty_version' => 'dev-software(karim)',
         'version' => 'dev-software(karim)',
-        'reference' => '9e4fb8b0d005b15723aa690806ece57457414c51',
+        'reference' => 'cfd812cec7b8a71aa95f68e50380c175b8b7ddd7',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         '__root__' => array(
             'pretty_version' => 'dev-software(karim)',
             'version' => 'dev-software(karim)',
-            'reference' => '9e4fb8b0d005b15723aa690806ece57457414c51',
+            'reference' => 'cfd812cec7b8a71aa95f68e50380c175b8b7ddd7',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

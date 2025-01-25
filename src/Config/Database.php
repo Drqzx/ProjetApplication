@@ -12,7 +12,7 @@ class Database {
     private $localhost = 'localhost';
     private $host = 'hantaoukarim.fr';
 
-    private $db_name = 'FAGPH';
+    private $db_name = 'parcinfo';
     private $username = 'fagph';
     private $password = 'uAz[sgI]9QtRds*h';
     private $conn;
