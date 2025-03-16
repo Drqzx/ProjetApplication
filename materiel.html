@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+  <title>Ressources Numériques</title>
+</head>
+<body>
+
+  <!-- Bannière horizontale en haut -->
+  <div id="banniere-bordure">
+    <h2>MATERIEL</h2> <!-- Titre dans la bannière -->
+  </div>
+  
+  <!-- Conteneur principal pour la bannière verticale et le tableau -->
+  <div id="conteneur-principal">
+    <!-- Bannière verticale avec boutons -->
+    <div id="banniere-verticale">
+      <button>DASHBOARD</button>
+      <button>MATERIEL</button>
+      <button>LOGICIEL</button>
+      <button>USERS</button>
+    </div>
+
+    <!-- Espace à droite avec tableau et bouton d'ajout -->
+    <div id="tableau">
+      <!-- Bouton Ajouter des données -->
+      <div id="ajouter-donnees">
+        <button id="ajouter-btn">Ajouter des ressources</button>
+      </div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Type</th>
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Numéro de série</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PC_7490_01</td>
+            <td>ORDI</td>
+            <td>DELL</td>
+            <td>LATTITUDE 7490</td>
+            <td>XXXXXXXX</td>
+          </tr>
+          <tr>
+            <td>PC_7490_02</td>
+            <td>ORDI</td>
+            <td>DELL</td>
+            <td>LATTITUDE 6000</td>
+            <td>XXXXXXXX</td>
+          </tr>
+          <tr>
+            <td>PC_7490_03</td>
+            <td>ORDI</td>
+            <td>DELL</td>
+            <td>LATTITUDE 1000</td>
+            <td>XXXXXXXX</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Pop-up pour ajouter des ressources -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="close" class="close">&times;</span>
+      <h3>Ajouter une ressource</h3>
+      <form id="form-ajout">
+        <input type="text" id="nom" name="nom" required autocomplete="off" placeholder="Nom"><br>
+        
+        <input type="text" id="type" name="type" required autocomplete="off" placeholder="Type"><br>
+        
+        <input type="text" id="marque" name="marque" required autocomplete="off" placeholder="Marque"><br>
+        
+        <input type="text" id="modele" name="modele" required autocomplete="off" placeholder="Modèle"><br>
+        
+        <input type="text" id="num-serie" name="num-serie" required autocomplete="off" placeholder="Numéro de série"><br>
+        
+        <button type="submit">Ajouter</button>
+      </form>
+    </div>
+  </div>
+  
+
+  <!-- Lien vers le fichier JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
