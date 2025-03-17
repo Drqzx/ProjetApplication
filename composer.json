@@ -7,7 +7,8 @@
             "Config\\": "src/Config",
             "Classes\\": "src/Classes",
             "Models\\": "src/Models",
-            "Controllers\\": "src/Controllers"
+            "Controllers\\": "src/Controllers",
+            "Router\\": "src/Router"
         }
     },
   "require": {

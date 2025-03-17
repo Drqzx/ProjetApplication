@@ -2,13 +2,16 @@
 
 require_once 'vendor/autoload.php';
 
-use Controllers\simpleController;
+use Router\Router;
 
-function main() {
+$router = new Router();
 
-    $simpleController = new simpleController();
-    $simpleController->index();
+// Démarrage de la session
+session_start();
 
-}
+// Récupérer l'URL demandée
+$url = $_GET['url'] ?? ''; // Récupérer 'url' dans les paramètres GET (exemple : /controller/method/params)
 
-main();
+// Initialiser et exécuter le routeur
+$router = new Router();
+$router->route($url);
