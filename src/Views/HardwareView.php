@@ -16,7 +16,7 @@
 
 <!-- Bannière horizontale en haut -->
 <div id="banniere-bordure">
-    <h2>LOGICIELS</h2> <!-- Titre dans la bannière -->
+    <h2>MATERIELS</h2> <!-- Titre dans la bannière -->
 </div>
 
 <!-- Conteneur principal pour la bannière verticale et le tableau -->
