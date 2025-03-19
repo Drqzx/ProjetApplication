@@ -102,4 +102,14 @@ class SoftwareController extends Controller {
         exit();
 
     }
+
+    public function addTestSoftwares(){
+        for($i = 0; $i < 20; $i++){
+            $software = new Software(null, 'Logiciel ' . $i, 'Licence ' . $i, 'Version ' . $i);
+            $this->softwaresModel->insertSoftware($software);
+        }
+
+        header("Location: Software");
+        exit();
+    }
 }
