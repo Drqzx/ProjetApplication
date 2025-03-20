@@ -23,10 +23,10 @@
 <div id="conteneur-principal">
     <!-- Bannière verticale avec boutons -->
     <div id="banniere-verticale">
-        <a href="Dashboard">DASHBOARD</a>
         <a href="Hardware">MATERIELS</a>
         <a href="Software">LOGICIELS</a>
         <a href="User">UTILISATEUR</a>
+        <a href="Login/Logout">DECONNEXION</a>
     </div>
 
     <!-- Espace à droite avec tableau et bouton d'ajout -->
