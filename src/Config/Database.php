@@ -14,7 +14,7 @@ class Database {
 
     private $db_name = 'parcinfo';
     private $username = 'root';
-    private $password = 'OUI';
+    private $password = '';
     private $conn;
 
     // Get the database connection

@@ -112,3 +112,8 @@
     margin-left: 200px;
     padding: 20px;
 }
+
+
+#banniere-verticale a{
+    text-decoration:none !important;
+}
