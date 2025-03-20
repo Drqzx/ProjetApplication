@@ -1,69 +1,99 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: #ff914d;
+  background-image: url("../Png/dashboard.png");
+  background-size: cover;
 }
 
 #banniere-bordure {
   width: 100%;
-  height: 50px;
-  background-color: #000000; /* Fond noir */
-  border-bottom: 2px solid #333;
+  height: 60px;
+  background: black; /* Noir plein */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   display: flex;
-  align-items: center; /* Centrer le texte verticalement */
-  justify-content: center; /* Centrer le texte horizontalement */
-  margin-bottom: 200px; /* Espacement vers le bas de la bannière */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 150px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+
 #banniere-bordure h2 {
-  color: white; /* Texte en blanc */
-  margin: 0; /* Supprime les marges par défaut */
-  font-size: 24px; /* Taille de police */
-  font-weight: bold; /* Texte en gras */
+  color: white;
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  gap: 60px; /* Espace entre les deux rangées */
-  padding-top: 20px; /* Espacement vers le haut de la container */
+  gap: 40px;
+  padding-top: 20px;
 }
 
 .row {
   display: flex;
-  justify-content: center; /* Centre les boutons */
-  gap: 60px; /* Espacement entre les boutons */
+  justify-content: center;
+  gap: 50px;
 }
 
 a {
-  width: 200px; /* Assure une largeur fixe */
+  width: 220px;
   padding: 15px;
-  background-color: #000000;
+  background: linear-gradient(to right, #000000, #333333);
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: transform 0.3s, background 0.3s;
   font-size: 16px;
-  text-align: center; /* Centre le texte */
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 a:hover {
-  background-color: #eab797;
+  background: linear-gradient(to right, #eab797, #d3845a);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 form {
   width: 80%;
   max-width: 500px;
-  background-color: white;
+  background: rgba(255, 255, 255, 0.2); /* Effet verre */
+  backdrop-filter: blur(15px);
   padding: 20px;
   border-radius: 15px;
-  margin: 0 auto; /* Centre horizontalement */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s;
+  margin-left: 50px;
+}
+
+form:hover {
+  transform: translateY(-5px);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #94b9ff;
+  outline: none;
 }

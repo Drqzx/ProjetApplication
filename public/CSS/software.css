@@ -1,22 +1,28 @@
+/* GÉNÉRAL */
 body {
-  font-family: Arial, sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
-  background: #ff914d;
+  background-image: url("../Png/dashboard.png");
+  background-size: cover;
 }
+
+/* CONTAINER PRINCIPAL */
 #conteneur-principal {
   display: flex;
   flex-direction: row;
   height: calc(100vh - 100px);
 }
 
-#tableau{
+/* TABLEAU PRINCIPAL */
+#tableau {
   padding: 20px;
   width: calc(100% - 220px);
   color: white;
 }
 
+/* BOUTON D'AJOUT */
 #ajouter-donnees {
   display: flex;
   justify-content: flex-start;
@@ -24,76 +30,75 @@ body {
 }
 
 #ajouter-btn {
-  background-color: #000000;
+  background: linear-gradient(to right, #000000, #333333);
   border: 2px solid white;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 8px;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
 }
 
 #ajouter-btn:hover {
-  background-color: #cc7a1a;
-  border-color: #cc7a1a;
+  background: rgba(106, 130, 197, 0.9);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-
-
+/* TABLEAU */
 #tableau table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
 }
 
 #tableau th, #tableau td {
   text-align: center;
   padding: 20px;
   border: 2px solid white;
-  border-radius: 5px;
-
-  color:white;
+  color: white;
 }
 
 #tableau th {
-  background-color: #553f2c;
+  background: rgba(106, 130, 197, 0.9);
 }
 
-#tableau tr:nth-child(even) {
-  background-color: #000000;
-}
-
+#tableau tr:nth-child(even),
 #tableau tr:nth-child(odd) {
-  background-color: #000000;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-/* Style du popup */
-/* Style général de la pop-up */
+/* STYLE POP-UP */
 .popup {
-  display: none; /* Cachée par défaut */
+  display: none;
   position: fixed;
-  z-index: 1000; /* Au-dessus du contenu */
+  z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fond sombre semi-transparent */
-  padding-top: 100px; /* Espace pour centrer la pop-up verticalement */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 100px;
 }
 
-/* Contenu de la pop-up */
+/* CONTENU POP-UP */
 .popup-content {
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
   margin: 5% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border-radius: 10px;
   width: 50%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour la pop-up */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
-/* Style du bouton de fermeture */
+/* BOUTON FERMETURE */
 .close {
   color: #aaa;
   font-size: 30px;
@@ -108,10 +113,9 @@ body {
 .close:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
-/* Formulaire dans la pop-up */
+/* FORMULAIRE */
 form {
   display: flex;
   flex-direction: column;
@@ -132,24 +136,27 @@ form input {
 
 form button {
   padding: 10px;
-  background-color: #cc7a1a;
+  background: linear-gradient(to right, #669dd8, #a8eba5);
   color: white;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   font-size: 16px;
+  transition: transform 0.3s, background 0.3s;
 }
 
 form button:hover {
-  background-color: #000000;
+  background: linear-gradient(to right, #000000, #333333);
+  transform: scale(1.05);
 }
 
-.optionContainer{
+/* OPTIONS */
+.optionContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.optionContainer form{
+.optionContainer form {
   width: fit-content;
 }

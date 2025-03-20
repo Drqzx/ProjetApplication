@@ -3,24 +3,29 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background: #ff914d;
+    background-image: url("../Png/dashboard.png");
+    background-size: cover;
 }
 
 #banniere-bordure {
     width: 100%;
     height: 100px;
-    background-color: #000000;
-    border-bottom: 2px solid #333;
+    background: rgb(0, 0, 0); /* Noir semi-transparent */
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #banniere-bordure h2 {
     color: white;
     margin: 0;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #conteneur-principal {
@@ -31,15 +36,17 @@ body {
 
 #banniere-verticale {
     width: 200px;
-    background-color: #000000;
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 20px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
 }
 
 #banniere-verticale button {
-    background-color: #000000;
+    background: linear-gradient(to right, #000000, #000000);
     border: 2px solid white;
     color: white;
     padding: 15px;
@@ -47,51 +54,35 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
 }
 
 #banniere-verticale button:hover {
-    background-color: #e68a3a;
+    background: linear-gradient(to right, #e68a3a, #d4621e);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgb(0, 0, 0);
 }
 
 #grosse-div {
-    background-color: black;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
     color: white;
     padding: 40px;
     width: 60%;
     max-width: 800px;
-    min-height: 300px; /* Ajuste selon le besoin */
+    min-height: 300px;
     text-align: center;
-    border: 3px solid white;
+    border: 3px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-    margin: auto; /* Centre la div horizontalement */
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s;
 }
 
-.boutons-utilisateur {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
+#grosse-div:hover {
+    transform: translateY(-5px);
 }
-
-.boutons-utilisateur button {
-    background-color: #e68a3a;
-    border: none;
-    color: white;
-    padding: 10px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.boutons-utilisateur button:hover {
-    background-color: #d77e2e;
-}
-
-
-

@@ -13,8 +13,8 @@ class Database {
     private $host = 'hantaoukarim.fr';
 
     private $db_name = 'parcinfo';
-    private $username = 'fagph';
-    private $password = 'uAz[sgI]9QtRds*h';
+    private $username = 'root';
+    private $password = 'OUI';
     private $conn;
 
     // Get the database connection
