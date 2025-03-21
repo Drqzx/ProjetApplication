@@ -26,13 +26,8 @@
 
     <div id="grosse-div">
         <h2>Gestion des utilisateurs</h2>
-        <p>Nom :</p>
-        <p>Prénom :</p>
-        <p>Email :</p>
-        <p>Mot de passe :</p>
-        <p>Rôle :</p>
-        <p>Date de création du compte :</p>
-        
+        <p>Nom d'utilisateur : <?= $actualUser->getUsername()?></p>
+        <p>Mot de passe : <?=$actualUser->getPassword()?></p>
     </div>
     
     

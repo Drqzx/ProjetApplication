@@ -47,4 +47,16 @@ Class Controller {
 
         }
     }
+
+    public function isLoggedIn(){
+        if(!isset($_SESSION['loggedIn']) || $_SESSION['loggedIn'] == false){
+            $_SESSION['NOTIFICATION'] = [
+                'type' => 'error',
+                'message' => 'Vous devez être connecté pour accéder à cette page'
+            ];
+
+            header('Location: Login');
+            exit();
+        }
+    }
 }

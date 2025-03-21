@@ -16,6 +16,8 @@ class SoftwareController extends Controller {
     }
 
     public function index() {
+
+        $this->isLoggedIn();
         // Récupération des logiciels
         $softwares = $this->softwaresModel->getAllSoftwares();
 

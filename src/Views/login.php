@@ -14,10 +14,10 @@
   </div>
   
   <div>
-    <form method="POST">
-      <input type="text" placeholder="Username" required>
+    <form method="POST" action="Login/verifyUser">
+      <input type="text" name="username" placeholder="Username" required>
 
-      <input type="password" id="password" placeholder="password" required>
+      <input type="password" name="password" id="password" placeholder="password" required>
 
       <button type="submit">Se connecter</button>
     </form>

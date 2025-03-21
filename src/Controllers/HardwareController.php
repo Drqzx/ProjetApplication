@@ -16,6 +16,9 @@ class HardwareController extends Controller {
     }
 
     public function index() {
+
+        $this->isLoggedIn();
+
         // Récupération des matériels
         $hardwares = $this->hardwareModel->getAllHardwares();
 
