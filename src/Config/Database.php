@@ -10,7 +10,6 @@ class Database {
     private $isLocalhost = true;
 
     private $localhost = 'localhost';
-    private $host = 'hantaoukarim.fr';
 
     private $db_name = 'parcinfo';
     private $username = 'root';
